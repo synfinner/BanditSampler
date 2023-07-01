@@ -2,13 +2,15 @@
 
 This script attempts to fetch all of the compiled Bandit Stealer binaries stored on a discovered Bandit Stealer panel. 
 
+Huge shout out to [@TLP_R3D](https://twitter.com/@TLP_R3D) and [@josh_penny](https://twitter.com/josh_penny)!
+
 ## Setup 
 
 `pip3 install -r requirements.txt`
 
 ## How
 
-From several of the Bandit Stealer panels I came across, I noted two methods on how the panels allow admins to download their compiled binaries. 
+From several of the Bandit Stealer panels I came across, I noted two methods on how the panels allow admins to download their compiled binaries via a list that is populated from a requst to /builds. Naturally, we can just script that same process 😉. 
 
 Method 1 relies on a POST request containing the file name, whereas Method 2 uses a GET request to /downloads. I'm sure there are more.
 
